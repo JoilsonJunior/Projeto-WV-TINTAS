@@ -75,6 +75,9 @@ nav {
         display: flex;
         flex-direction: column;
     }
+    .banner_principal{
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -110,6 +113,9 @@ nav {
     }
     .container_top img{
         margin: 5px;
+    }
+    .banner_principal{
+        height: 100vh;
     }
 }
 
