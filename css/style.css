@@ -76,7 +76,7 @@ nav {
         flex-direction: column;
     }
     .banner_principal img{
-        height: 100vh;
+        height: 400px;
         width: 100vh;
     }
 }
@@ -116,7 +116,7 @@ nav {
         margin: 5px;
     }
     .banner_principal img{
-        height: 100vh;
+        height: 400px;
         width: 100vh;
     }
 }
