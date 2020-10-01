@@ -104,8 +104,8 @@ nav {
     .burguer{
         display: block;
         position: absolute;
-        left: 400px;
-        top: 40px;
+        left: 500px;
+        top: 52px;
     }
     .container_top{
         display: flex;
