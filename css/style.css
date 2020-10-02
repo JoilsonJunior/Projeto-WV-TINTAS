@@ -4,7 +4,9 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
+
 
 nav {
     display: flex;
@@ -33,18 +35,62 @@ nav {
     justify-content: space-around;
     width: 30%;
     
+    
 }
 
-.nav-links li{
+nav .nav-links li{
     list-style: none;
 }
 
-.nav-links a{
+nav .nav-links a{
+    position: relative;
     color: #0157a4;
     text-decoration: none;
     letter-spacing: 0px;
     font-weight: bold;
     font-size: 17px;
+    text-transform: uppercase;
+}
+nav .nav-links a:hover{
+    color: #f13138;
+}
+nav .nav-links a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background:  #f13138;
+}
+
+nav .nav-links a:hover::before{
+    width: 100%;
+    transition: all .5s ease;
+
+}
+
+#slider{
+    width: 100%;
+    height: 65vw;
+    max-height: 1000px;
+    position: relative;
+    
+}
+
+#slider img{
+    opacity: 0;
+    position: absolute;
+    object-fit: cover;
+    top: 30px;
+    
+    width: 100%;
+    height: 90%;
+
+}
+
+#slider img.selected{
+    opacity: 1;
 }
 
 .burguer {
@@ -57,9 +103,10 @@ nav {
     height: 3px;
     background-color: #0157a4;
     margin: 5px;
-   
+    box-sizing: border-box;
     transition: transform 0.3s ease;
 }
+
 @media screen and (max-width:1024px) {
     .nav-links{
         display: flex;
@@ -104,8 +151,9 @@ nav {
     .burguer{
         display: block;
         position: absolute;
-        left: 500px;
-        top: 52px;
+        left: 400px;
+        top: 40px;
+        
     }
     .container_top{
         display: flex;
@@ -247,4 +295,24 @@ nav {
     font-size: 24px;
     line-height: 32px;
     text-align: center;
+}
+
+.whatsapp-link {
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 95%;
+background-color: #25d366;
+color: #fff;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+
+}
+
+.fa-whatsapp{
+    margin-top: 16px;
 }
