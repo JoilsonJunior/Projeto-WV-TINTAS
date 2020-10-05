@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>WV TINTAS</title>
 </head>
@@ -17,11 +18,11 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Ofertas e Promoções</a></li>
-            <li><a href="#">contato</a></li>
+            <li><a class="scroll" href="#home">Home</a></li>
+            <li><a class="scroll" href="#sobre">Sobre</a></li>
+            <li><a class="scroll" href="#produtos">Produtos</a></li>
+            <li><a class="scroll" href="#ofertas">Ofertas e Promoções</a></li>
+            <li><a class="scroll" href="#contato">contato</a></li>
         </ul>
 
         <div class="burguer toggle">
@@ -31,7 +32,7 @@
         </div>
         
     </nav>
-
+<div id="home">
     <div class="banner_principal">
        <div id="slider">
         <img class="selected" src="img/1903x650.png" alt="Imade1" width="100%">
@@ -40,6 +41,13 @@
         <img src="img/1903x650.4.png" alt="Image4" width="100%">
         <img src="img/1903x650.5.png" alt="Image5" width="100%">
    </div>
+</div>
+
+<div id="sobre">
+
+<div class="prod_tittle">
+            Sobre
+    </div>
     <div class="container_destaques">
         <div class="container_left">
             <img src="img/555x500.png" alt="" width="100%">
@@ -54,43 +62,14 @@
             </div>
         </div>
     </div>
+</div>
+ 
 <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=71991114658" target="_blank">
 <i class=" fa fa-whatsapp"></i>
 </a>
-    <div class="prod_tittle">
-            Novidades
-    </div>
 
-    <div class="container_prod_destaque">
-        <div class="cards_prods">
-            <div class="card_prod">
-                <img src="img/262x350.png" alt="" width="100%">
-                <h4>Tinta Azul</h4>
-                <p>R$ 49.90</p>
-            </div>
-            <div class="card_prod">
-                <img src="img/262x350.png" alt="" width="100%">
-                <h4>Tinta Azul</h4>
-                <p>R$ 49.90</p>
-            </div>
-            <div class="card_prod">
-                <img src="img/262x350.png" alt="" width="100%">
-                <h4>Tinta Azul</h4>
-                <p>R$ 49.90</p>
-            </div>
-            <div class="card_prod">
-                <img src="img/262x350.png" alt="" width="100%">
-                <h4>Tinta Azul</h4>
-                <p>R$ 49.90</p>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="container_CTA">
-        <img src="img/1903x438.png" alt="" width="100%">
-    </div>
-    
+<div id="produtos">
+   
     <div class="prod_tittle">
         Nossos Produtos
     </div>
@@ -140,7 +119,48 @@
             <p>R$ 49.90</p>
         </div>
     </div>
+   </div>
+  </div> 
+    
+
+    <div class="container_CTA">
+        <img src="img/1903x438.png" alt="" width="100%">
+    </div>
+
+<div id="ofertas">
+    
+    <div class="prod_tittle">
+            OFERTAS E PROMOÇÕES
+
+    </div>
+
+    <div class="container_prod_destaque">
+        <div class="cards_prods">
+            <div class="card_prod">
+                <img src="img/262x350.png" alt="" width="100%">
+                <h4>Tinta Azul</h4>
+                <p>R$ 49.90</p>
+            </div>
+            <div class="card_prod">
+                <img src="img/262x350.png" alt="" width="100%">
+                <h4>Tinta Azul</h4>
+                <p>R$ 49.90</p>
+            </div>
+            <div class="card_prod">
+                <img src="img/262x350.png" alt="" width="100%">
+                <h4>Tinta Azul</h4>
+                <p>R$ 49.90</p>
+            </div>
+            <div class="card_prod">
+                <img src="img/262x350.png" alt="" width="100%">
+                <h4>Tinta Azul</h4>
+                <p>R$ 49.90</p>
+            </div>
+        </div>
+    </div>
 </div>
+    
+   
 
 <div class="prod_tittle">
     Referencias
@@ -165,6 +185,7 @@
     
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
